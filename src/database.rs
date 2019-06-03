@@ -20,7 +20,7 @@ use super::response::{
     serialize_query_response, serialize_response, try_serialize_response, Response,
 };
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Database {
     name: String,
     base_url: Url,

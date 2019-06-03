@@ -64,7 +64,7 @@ use super::response::{serialize_response, try_serialize_response, Response};
 /// let conn: Connection = Default::default();
 /// ```
 // TODO Connections' lifetimes should be longer than Databases' lifetimes
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Connection {
     session: Arc<Client>,
     databases: HashMap<String, Database>,

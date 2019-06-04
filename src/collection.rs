@@ -7,7 +7,7 @@ use serde_derive::Deserialize;
 
 use super::{Database, Document};
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Collection {
     id: String,
     name: String,
